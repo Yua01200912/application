@@ -7,7 +7,19 @@
     </head>
     <body>
         <h1>今日の天気</h1>
+        <form id="city-form">
+            <label for="city-input">都市名を入力してください:</label>
+            <input type="text" id="city-input" placeholder="例:東京"><!-- placeholderで入力例が薄く表示される -->
+
+            <button type="submit">検索</button>
+            </form>
+
         <div id="weather-info">
             <p>都市:<span id="city"></span></p>
+            <p>天気:<span id="weather"></span></p>
+            <p>気温:<span id="temperature"></span></p>
         </div>
+
+        <script src="weather.js"></script>
     </body>
+    </html>
